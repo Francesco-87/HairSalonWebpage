@@ -20,6 +20,8 @@ body {
 h2{
   color: aliceblue;
   font-size: 3rem;
+  text-decoration: underline;
+  
 }
 
 /* Header */
@@ -70,14 +72,27 @@ main{
   padding-top: 7rem;
   width: 100%;
   height: auto;
+}
 
+  .container-base{
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+    justify-content: center;
+    
+}
+/* omMeg */
+
+.container-base.container-omMeg h2 {
+  margin-bottom: 1rem; /* adjust this to control spacing */
+  scroll-margin-top: 8rem
 }
 
 .omMeg{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: blue;
+  
   width: 62rem;
   height: 25rem;
   overflow: hidden;
@@ -86,12 +101,10 @@ main{
 
 .container-pictureAnsatt{
   width: 17rem;
-  height: auto;
-  
+  height: auto;  
 }
 
 .picture-ansatt{
-
   display: block;
   width: 100%;
 }
@@ -105,5 +118,77 @@ main{
   color: black;
   border-radius: 8px;
   margin: 2rem auto;
+}
+
+/* Gallery */
+.container-base.container-galery h2 {
+  margin-bottom: 1rem; /* adjust this to control spacing */
+  scroll-margin-top: 8rem
+}
+
+.galery{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  
+ overflow: hidden;
+
+}
+.galery-item{
+  width: 23rem;
+  height: auto;
+
+
+}
+.galery-image{
+  display: block;
+  width: 100%;
+
+}
+
+/* Behandlinger */
+
+.container-base.container-behandlinger h2{
+    margin-bottom: 1rem; /* adjust this to control spacing */
+    scroll-margin-top: 8rem
+}
+
+.behandlinger{
+  width: 90vw;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: #333;
+  font-size: 1.5rem;
+  
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.service-name {
+  background-color: #f9f5f0;
+  padding-right: 0.5rem;
+  z-index: 1;
+}
+
+.service-price {
+  background-color: #f9f5f0;
+  padding-left: 0.5rem;
+  z-index: 1;
+}
+
+.dots {
+  
+  flex: 1;
+  border-bottom: 1px dotted #f9f5f0;
+  margin: 0 0.5rem;
+  z-index: 0;
 }
 
