@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body { 
+
+  font-family: 'Raleway', sans-serif; 
+  font-size: 16px;
+  color: #222;
+  background-image: url(./img/Hjemme\ Studio\ with\ Wavy\ Elegance.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  line-height: 1.6;
+
+}
+
+/* Headlines */
+
+h2{
+  color: aliceblue;
+  font-size: 3rem;
+}
+
+/* Header */
+
+.header{
+  position: fixed;  
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  overflow: hidden;
+  background-color: #f9f5f0; 
+  width: 100vw;
+  height: 7rem;
+  padding: 0 2rem;
+  
+}
+
+.logo {
+  width: 6rem;
+  height: auto;
+}
+
+.mainpage-logo {
+ width: 100%;
+ display: block;
+
+}
+
+.navbar{
+  display: flex;
+  gap: 1.5rem;
+  
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+/* Main */
+
+main{
+  display: flex;
+  flex-direction: column; /* or 'row' if you want horizontal layout */
+  align-items: center;     /* centers horizontally */
+  justify-content: center;
+  padding-top: 7rem;
+  width: 100%;
+  height: auto;
+
+}
+
+.omMeg{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: blue;
+  width: 62rem;
+  height: 25rem;
+  overflow: hidden;
+
+}
+
+.container-pictureAnsatt{
+  width: 17rem;
+  height: auto;
+  
+}
+
+.picture-ansatt{
+
+  display: block;
+  width: 100%;
+}
+
+.paragraph-container{ 
+  background-color: #f9f5f0; 
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  padding: 1rem;
+  color: black;
+  border-radius: 8px;
+  margin: 2rem auto;
+}
+
