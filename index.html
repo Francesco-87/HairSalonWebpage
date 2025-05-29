@@ -17,10 +17,10 @@
         </div>
         <div class="navbar">
             <a href="#omMeg" >Om Meg</a>
-            <a href="#Galery" >Galery</a>
+            <a href="#Gallery" >Gallery</a>
             <a href="#Behandlinger" >Behandlinger</a>            
             <a href="#Kundevurdering" >Kundevurdering</a>
-            <a href="#Booking" >Booking</a>
+            <a href="#booking" >Booking</a>
             <a href="#Butikk" >Butikk</a>
         </div>
     </header>
@@ -50,17 +50,17 @@
             </div>
         </div>
         
-        <div class="container-base container-galery">
-            <h2 id="Galery">Galery</h2>
-            <div class="galery">
-                <div class="galery-item">
-                    <img src="./resources/img/Plum.jpg" alt="Galery Image 1" class="galery-image">
+        <div class="container-base container-gallery">
+            <h2 id="Gallery">Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="./resources/img/Plum.jpg" alt="Galery Image 1" class="gallery-image">
                 </div>
-                <div class="galery-item">
-                    <img src="./resources/img/Wedding.jpg" alt="Galery Image 2" class="galery-image">
+                <div class="gallery-item">
+                    <img src="./resources/img/Wedding.jpg" alt="Galery Image 2" class="gallery-image">
                 </div>
-                <div class="galery-item">
-                    <img src="./resources/img/Silver.jpg" alt="Galery Image 3" class="galery-image">
+                <div class="gallery-item">
+                    <img src="./resources/img/Silver.jpg" alt="Galery Image 3" class="gallery-image">
                 </div>
             
             </div>
@@ -132,16 +132,32 @@
             </div>
         </div>
         <div class="container-base container-booking">
-            <h2 id="Booking">Booking</h2>
-            <div class="Booking">
-            
+            <h2 id="booking">Booking</h2>
+            <div class="booking">
+                <form action="#" method="post" class="booking-form">
+                    <label for="name">Navn:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="date">Dato:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Tidspunkt:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <button type="submit">Bestill Time</button>
+                </form>
+                <h3>Merk at ingen time er gyldig uten bekreftelse!</h3>
+                
             </div>
         </div>
 
         <div class="container-base container-butikk">
             <h2 id="Butikk">Butikk</h2>
             <div class="Butikk">
-            
+                
             </div>
         </div>
           

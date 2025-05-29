@@ -36,6 +36,7 @@ h2{
   width: 100vw;
   height: 7rem;
   padding: 0 2rem;
+  z-index: 1000; /* ensures it stays on top */
   
 }
 
@@ -52,6 +53,7 @@ h2{
 
 .navbar{
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   
 }
@@ -123,12 +125,12 @@ main{
 }
 
 /* Gallery */
-.container-base.container-galery h2 {
+.container-base.container-gallery h2 {
   margin-bottom: 1rem; /* adjust this to control spacing */
   scroll-margin-top: 8rem
 }
 
-.galery{
+.gallery{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -136,13 +138,13 @@ main{
   overflow: hidden;
 
 }
-.galery-item{
+.gallery-item{
   width: 23rem;
   height: auto;
 
 
 }
-.galery-image{
+.gallery-image{
   display: block;
   width: 100%;
 
@@ -228,6 +230,66 @@ main{
  font-weight: 700;
   
 }
+
+/* Booking*/
+.container-base.container-booking h2{
+  margin-bottom: 1rem; /* adjust this to control spacing */
+   scroll-margin-top: 8rem
+}
+
+.booking{
+  background-color: #f9f5f0 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  justify-content: center;
+
+}
+
+
+.booking-form{ 
+  display: flex;              /* Add this */
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f9f5f0;    
+  max-width: 300px;
+
+}
+
+.booking-form input, .booking-form label{
+  font-size: 1.25rem;   /* input text size */
+  padding: 0.5rem;      /* more space inside the fields */
+  width: 100%; 
+  max-width: 300px;    /* limits the width of the input fields */
+
+}
+
+.booking-form label{
+  font-weight: 900;
+}
+
+.booking-form button{
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  background-color: #A8A8A8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+}
+
+.booking h3{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 90%;
+  
+}
+
+
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   .omMeg {
