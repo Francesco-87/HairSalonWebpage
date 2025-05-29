@@ -77,6 +77,10 @@ main{
 }
 
   .container-base{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;     
@@ -242,7 +246,8 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;     
-  justify-content: center;
+  width: 50%;
+  
 
 }
 
@@ -252,8 +257,10 @@ main{
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 400px;
   background-color: #f9f5f0;    
-  max-width: 300px;
+  box-sizing: border-box;
 
 }
 
@@ -261,7 +268,7 @@ main{
   font-size: 1.25rem;   /* input text size */
   padding: 0.5rem;      /* more space inside the fields */
   width: 100%; 
-  max-width: 300px;    /* limits the width of the input fields */
+  
 
 }
 
@@ -311,4 +318,12 @@ main{
     overflow: visible;
   
 }
+  .kundevurdering-item,
+  .galery-item {
+    width: 90%;
+  }
+
+  .booking-form {
+    max-width: 90%;
+  }
 }
