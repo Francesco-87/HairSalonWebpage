@@ -304,6 +304,10 @@ main{
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
+
+  .logo{
+    display: none;
+  }
   .omMeg {
     flex-direction: column;
     align-items: center;
